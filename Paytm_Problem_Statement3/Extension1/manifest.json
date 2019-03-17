@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Paytm Anti-Phishing",
+  "short_name": "Paytm Anti-Phishing",
+  "description": "Protect against phishing attacks targeting crypto users.",
+  "version": "0.0.4.4",
+  "author": "PhishFort",
+  "browser_action": {
+    "default_icon": "img/tab-icon.png",
+    "default_title": "Paytm Anti-Phishing",
+    "default_popup": "html/index.html"
+  },
+  "icons": {
+    "128": "img/tab-icon.png"
+  },
+  "background": {
+    "scripts": [
+      "js/jquery-3.3.1.min.js",
+      "js/background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "html/warning.html"
+  ],
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}

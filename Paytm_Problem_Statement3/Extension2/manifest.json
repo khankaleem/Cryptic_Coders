@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome Background Page Example",
+    "description": "Example",
+    "version": "1.0.0.0",
+    "icons": {
+        "128": "images/icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "history"
+    ],
+    "background": {
+        "scripts": [
+            "libs/psl.js",
+            "data/top-sites.js",
+            "bootstrap.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": {
+            "128": "images/icon.png"
+        },
+        "default_title": "Example Browser Action",
+        "default_popup": "popup.html"
+    }
+}
